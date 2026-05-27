@@ -1,0 +1,8 @@
+# Mengabaikan folder environment dan cache
+env/
+.ipynb_checkpoints/
+__pycache__/
+
+# Mengabaikan file dataset (setiap anggota harus download CSV sendiri secara lokal) nyalakan setelah download dataset
+#data/raw/*.csv
+#data/processed/*.csv
