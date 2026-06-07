@@ -5,4 +5,4 @@ __pycache__/
 
 # Mengabaikan file dataset (setiap anggota harus download CSV sendiri secara lokal) nyalakan setelah download dataset
 data/raw/*.csv
-data/processed/*.csv
+#data/processed/*.csv
