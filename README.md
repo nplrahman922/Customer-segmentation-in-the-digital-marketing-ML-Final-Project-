@@ -1,4 +1,6 @@
 # Customer-segmentation-in-the-digital-marketing-ML-Final-Project-
+
+=======
 # Data Engineering & Preprocessing Pipeline
 **Proyek Analisis Perilaku Pelanggan E-Commerce - Kelompok 6**
 
@@ -29,3 +31,4 @@ Untuk menjalankan pipeline ini secara lokal, pastikan *environment* telah terins
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
 ```
+>>>>>>> origin/main
