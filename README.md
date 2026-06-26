@@ -27,8 +27,6 @@ Proyek ini mengimplementasikan framework segmentasi pelanggan berbasis machine l
 │   ├── 02.0_unsupervised_learning_method.ipynb  # K-Means QLDE (algoritma utama paper)
 │   ├── 02.1_kmeans_standard.ipynb            # Standard K-Means (baseline)
 │   ├── 02.2_kmeans_de.ipynb                  # K-Means + Differential Evolution (F konstan)
-│   ├── 02.3_kmeans_pso.ipynb                 # K-Means + Particle Swarm Optimization
-│   ├── 02.4_kmeans_eoa.ipynb                 # K-Means + Equilibrium Optimizer Algorithm
 │   ├── 03_comparison_analysis.ipynb          # Analisis perbandingan metrik unsupervised
 │   ├── 04.1.1_classification_decision_tree_standard.ipynb
 │   ├── 04.1.2_classification_svm_standard.ipynb
@@ -61,7 +59,7 @@ Proyek ini mengimplementasikan framework segmentasi pelanggan berbasis machine l
   → Cleaning, Feature Engineering (11 fitur RFM), PowerTransformer, StandardScaler, PCA (6 PC)
      ↓
 [02] Unsupervised Learning — Clustering (K=6)
-  → 02.0 K-Means QLDE  |  02.1 Standard  |  02.2 DE  |  02.3 PSO  |  02.4 EOA
+  → 02.0 K-Means QLDE  |  02.1 Standard  |  02.2 DE
      ↓
 [03] Analisis Perbandingan Metrik Clustering
      ↓
@@ -120,8 +118,6 @@ Evaluasi dengan Cross-Validation (CV=5) menggunakan 100% data:
 | **Standard K-Means** | `K=6`, `init=k-means++`, `n_init=30`, `max_iter=25` |
 | **K-Means QLDE** | `K=6`, `pop_size=30`, `max_iter=60`, `F_init=0.7`, `Cr=0.9`, `mu=3.9` |
 | **K-Means DE** | `K=6`, `pop_size=30`, `max_iter=60`, `F=0.5` (konstan), `Cr=0.7`, `mu=3.7` |
-| **K-Means PSO** | `K=6`, `pop_size=30`, `max_iter=100` |
-| **K-Means EOA** | `K=6`, `pop_size=30`, `max_iter=100` |
 
 ---
 
@@ -150,8 +146,6 @@ Jalankan notebook berikut secara **berurutan atau terpisah** (masing-masing berd
 | `02.0_unsupervised_learning_method.ipynb` | K-Means QLDE | `hasildata_kmeans-qlde.csv` |
 | `02.1_kmeans_standard.ipynb` | Standard K-Means | `hasildata_kmeans-standard.csv` |
 | `02.2_kmeans_de.ipynb` | K-Means DE | `hasildata_kmeans-de.csv` |
-| `02.3_kmeans_pso.ipynb` | K-Means PSO | `hasildata_kmeans-pso.csv` |
-| `02.4_kmeans_eoa.ipynb` | K-Means EOA | `hasildata_kmeans-eoa.csv` |
 
 Setiap notebook menyimpan metrik (`.npy`) dan visualisasi (`.png`) ke folder `models/` secara otomatis.
 
@@ -159,7 +153,7 @@ Setiap notebook menyimpan metrik (`.npy`) dan visualisasi (`.png`) ke folder `mo
 
 ```
 Jalankan: notebooks/03_comparison_analysis.ipynb
-Prasyarat: Notebook 02.0–02.2 sudah dijalankan (file .npy tersedia di models/)
+Prasyarat: Notebook 02.0, 02.1, dan 02.2 sudah dijalankan (file .npy tersedia di models/)
 Output  : Tabel & grafik komparasi metrik, models/comparison_metrics.png
 ```
 
@@ -222,6 +216,4 @@ Semua model dan scaler tersimpan di folder `models/`:
 ## 📚 Referensi
 
 - Wang, G. (2025). *Customer segmentation in the digital marketing using a Q-learning based differential evolution algorithm integrated with K-means clustering.* PLoS ONE 20(2). [`references/Paper.pdf`](references/Paper.pdf)
-- Al-kababchee et al. (2023). *Enhancement of K-means clustering in big data based on equilibrium optimizer algorithm.* [`references/Enhancement_of_K-means_clustering_in_big_data_base.pdf`](references/Enhancement_of_K-means_clustering_in_big_data_base.pdf)
-- Mukhamediev et al. (2022). *Review of AI and ML Technologies.* Mathematics, 10(15). [`references/mathematics-10-02552-v2.pdf`](references/mathematics-10-02552-v2.pdf)
 - Sarvari et al. (2016). *Performance evaluation of customer segmentation based on RFM.* [`references/Peiman_Emerald.pdf`](references/Peiman_Emerald.pdf)
